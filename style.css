@@ -1,0 +1,75 @@
+
+body {
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(to bottom right, #ffe4e1, #e0bbff);
+    overflow-x: hidden;
+    position: relative;
+}
+
+.envelope {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff0f5;
+}
+
+.card {
+    padding: 2rem;
+    background: #ffebf0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.floating-hearts::after {
+    content: '';
+    background: url('https://i.ibb.co/3M3jvHb/hearts.png') repeat;
+    opacity: 0.5;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    animation: float 30s linear infinite;
+}
+
+@keyframes float {
+    from {background-position: 0 0;}
+    to {background-position: 1000px 1000px;}
+}
+
+.birthday-message {
+    padding: 2rem;
+    text-align: center;
+    color: #6a1b9a;
+    font-size: 1.5rem;
+}
+
+.slideshow-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.slide {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#replayBtn {
+    margin-top: 2rem;
+    padding: 0.7rem 1.5rem;
+    background: #ff80ab;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+#replayBtn:hover {
+    background: #ff4081;
+}
